@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HW3Cycles/1.0.0": {
+        "dependencies": {
+          "HW1Variables": "1.0.0",
+          "HW2BranchingStructure": "1.0.0",
+          "HW4Arrays": "1.0.0",
+          "HW5DoubleArrays": "1.0.0"
+        },
+        "runtime": {
+          "HW3Cycles.dll": {}
+        }
+      },
+      "HW1Variables/1.0.0": {
+        "runtime": {
+          "HW1Variables.dll": {}
+        }
+      },
+      "HW2BranchingStructure/1.0.0": {
+        "dependencies": {
+          "HW1Variables": "1.0.0"
+        },
+        "runtime": {
+          "HW2BranchingStructure.dll": {}
+        }
+      },
+      "HW4Arrays/1.0.0": {
+        "runtime": {
+          "HW4Arrays.dll": {}
+        }
+      },
+      "HW5DoubleArrays/1.0.0": {
+        "runtime": {
+          "HW5DoubleArrays.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HW3Cycles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW1Variables/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW2BranchingStructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW4Arrays/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW5DoubleArrays/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

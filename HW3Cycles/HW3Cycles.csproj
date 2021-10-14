@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HW1Variables\HW1Variables.csproj" />
+    <ProjectReference Include="..\HW2BranchingStructure\HW2BranchingStructure.csproj" />
+    <ProjectReference Include="..\HW4Arrays\HW4Arrays.csproj" />
+    <ProjectReference Include="..\HW5DoubleArrays\HW5DoubleArrays.csproj" />
+  </ItemGroup>
+
+</Project>

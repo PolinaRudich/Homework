@@ -1,0 +1,12 @@
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\bin\Debug\net5.0\HW5DoubleArrays.deps.json
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\bin\Debug\net5.0\HW5DoubleArrays.dll
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\bin\Debug\net5.0\ref\HW5DoubleArrays.dll
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\bin\Debug\net5.0\HW5DoubleArrays.pdb
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.AssemblyInfo.cs
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.dll
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\ref\HW5DoubleArrays.dll
+C:\Users\Asus\source\repos\Homework\HW5DoubleArrays\obj\Debug\net5.0\HW5DoubleArrays.pdb

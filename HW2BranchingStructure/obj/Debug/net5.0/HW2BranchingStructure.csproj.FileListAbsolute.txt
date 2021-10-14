@@ -1,0 +1,15 @@
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.AssemblyInfo.cs
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW2BranchingStructure.deps.json
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW2BranchingStructure.dll
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\ref\HW2BranchingStructure.dll
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW2BranchingStructure.pdb
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.dll
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\ref\HW2BranchingStructure.dll
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.pdb
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW1Variables.dll
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW1Variables.pdb
+C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.csproj.CopyComplete

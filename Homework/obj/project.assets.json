@@ -1,0 +1,180 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "HW1Variables/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HW1Variables.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW1Variables.dll": {}
+        }
+      },
+      "HW2BranchingStructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HW1Variables": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HW2BranchingStructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW2BranchingStructure.dll": {}
+        }
+      },
+      "HW3Cycles/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HW1Variables": "1.0.0",
+          "HW2BranchingStructure": "1.0.0",
+          "HW4Arrays": "1.0.0",
+          "HW5DoubleArrays": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HW3Cycles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW3Cycles.dll": {}
+        }
+      },
+      "HW4Arrays/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HW4Arrays.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW4Arrays.dll": {}
+        }
+      },
+      "HW5DoubleArrays/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HW5DoubleArrays.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HW5DoubleArrays.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HW1Variables/1.0.0": {
+      "type": "project",
+      "path": "../HW1Variables/HW1Variables.csproj",
+      "msbuildProject": "../HW1Variables/HW1Variables.csproj"
+    },
+    "HW2BranchingStructure/1.0.0": {
+      "type": "project",
+      "path": "../HW2BranchingStructure/HW2BranchingStructure.csproj",
+      "msbuildProject": "../HW2BranchingStructure/HW2BranchingStructure.csproj"
+    },
+    "HW3Cycles/1.0.0": {
+      "type": "project",
+      "path": "../HW3Cycles/HW3Cycles.csproj",
+      "msbuildProject": "../HW3Cycles/HW3Cycles.csproj"
+    },
+    "HW4Arrays/1.0.0": {
+      "type": "project",
+      "path": "../HW4Arrays/HW4Arrays.csproj",
+      "msbuildProject": "../HW4Arrays/HW4Arrays.csproj"
+    },
+    "HW5DoubleArrays/1.0.0": {
+      "type": "project",
+      "path": "../HW5DoubleArrays/HW5DoubleArrays.csproj",
+      "msbuildProject": "../HW5DoubleArrays/HW5DoubleArrays.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "HW1Variables >= 1.0.0",
+      "HW2BranchingStructure >= 1.0.0",
+      "HW3Cycles >= 1.0.0",
+      "HW4Arrays >= 1.0.0",
+      "HW5DoubleArrays >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\Homework\\Homework\\Homework.csproj",
+      "projectName": "Homework",
+      "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\Homework\\Homework.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\source\\repos\\Homework\\Homework\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj"
+            },
+            "C:\\Users\\Asus\\source\\repos\\Homework\\HW2BranchingStructure\\HW2BranchingStructure.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW2BranchingStructure\\HW2BranchingStructure.csproj"
+            },
+            "C:\\Users\\Asus\\source\\repos\\Homework\\HW3Cycles\\HW3Cycles.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW3Cycles\\HW3Cycles.csproj"
+            },
+            "C:\\Users\\Asus\\source\\repos\\Homework\\HW4Arrays\\HW4Arrays.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW4Arrays\\HW4Arrays.csproj"
+            },
+            "C:\\Users\\Asus\\source\\repos\\Homework\\HW5DoubleArrays\\HW5DoubleArrays.csproj": {
+              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW5DoubleArrays\\HW5DoubleArrays.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
