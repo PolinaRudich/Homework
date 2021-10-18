@@ -163,11 +163,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -225,20 +221,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj"
-              },
-              "C:\\Users\\Asus\\source\\repos\\Homework\\HW2BranchingStructure\\HW2BranchingStructure.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW2BranchingStructure\\HW2BranchingStructure.csproj"
-              },
-              "C:\\Users\\Asus\\source\\repos\\Homework\\HW4Arrays\\HW4Arrays.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW4Arrays\\HW4Arrays.csproj"
-              },
-              "C:\\Users\\Asus\\source\\repos\\Homework\\HW5DoubleArrays\\HW5DoubleArrays.csproj": {
-                "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW5DoubleArrays\\HW5DoubleArrays.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

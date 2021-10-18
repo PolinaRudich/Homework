@@ -10,12 +10,3 @@ C:\Users\Asus\source\repos\Homework\HW3Cycles\obj\Debug\net5.0\HW3Cycles.csproj.
 C:\Users\Asus\source\repos\Homework\HW3Cycles\obj\Debug\net5.0\HW3Cycles.dll
 C:\Users\Asus\source\repos\Homework\HW3Cycles\obj\Debug\net5.0\ref\HW3Cycles.dll
 C:\Users\Asus\source\repos\Homework\HW3Cycles\obj\Debug\net5.0\HW3Cycles.pdb
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW1Variables.dll
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW2BranchingStructure.dll
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW4Arrays.dll
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW5DoubleArrays.dll
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW1Variables.pdb
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW2BranchingStructure.pdb
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW4Arrays.pdb
-C:\Users\Asus\source\repos\Homework\HW3Cycles\bin\Debug\net5.0\HW5DoubleArrays.pdb
-C:\Users\Asus\source\repos\Homework\HW3Cycles\obj\Debug\net5.0\HW3Cycles.csproj.CopyComplete

@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{4891BBA1-6BA1-4BC4-8191-67DE27DA99C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework", "Homework\Homework.csproj", "{4891BBA1-6BA1-4BC4-8191-67DE27DA99C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW1Variables", "HW1Variables\HW1Variables.csproj", "{1410287A-0AC2-4593-9024-79BD8AB9A265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW1Variables", "HW1Variables\HW1Variables.csproj", "{1410287A-0AC2-4593-9024-79BD8AB9A265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2BranchingStructure", "HW2BranchingStructure\HW2BranchingStructure.csproj", "{63601880-F8E1-4961-97C5-9B5B8ED09C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW2BranchingStructure", "HW2BranchingStructure\HW2BranchingStructure.csproj", "{63601880-F8E1-4961-97C5-9B5B8ED09C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3Cycles", "HW3Cycles\HW3Cycles.csproj", "{4AEBF692-024F-47D1-B36F-AF4FD87B036A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW3Cycles", "HW3Cycles\HW3Cycles.csproj", "{4AEBF692-024F-47D1-B36F-AF4FD87B036A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW4Arrays", "HW4Arrays\HW4Arrays.csproj", "{33277BD5-C82D-44B6-99CF-6FB37AF70D9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW4Arrays", "HW4Arrays\HW4Arrays.csproj", "{33277BD5-C82D-44B6-99CF-6FB37AF70D9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW5DoubleArrays", "HW5DoubleArrays\HW5DoubleArrays.csproj", "{4E826060-3C40-4ED9-A535-1BCFE78AA51D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW5DoubleArrays", "HW5DoubleArrays\HW5DoubleArrays.csproj", "{4E826060-3C40-4ED9-A535-1BCFE78AA51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW1Variables.tests", "HW1Variables.tests\HW1Variables.tests.csproj", "{24F9281A-4495-485B-A860-D0FF218347CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2BranchingStructure.tests", "HW2BranchingStructure.tests\HW2BranchingStructure.tests.csproj", "{386AB380-DF6F-4D2A-91F4-2A35E08469A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3Cycles.tests", "HW3Cycles.tests\HW3Cycles.tests.csproj", "{E62080C4-CD95-4EC1-A10E-E759A4617C93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{4E826060-3C40-4ED9-A535-1BCFE78AA51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E826060-3C40-4ED9-A535-1BCFE78AA51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E826060-3C40-4ED9-A535-1BCFE78AA51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F9281A-4495-485B-A860-D0FF218347CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F9281A-4495-485B-A860-D0FF218347CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F9281A-4495-485B-A860-D0FF218347CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F9281A-4495-485B-A860-D0FF218347CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386AB380-DF6F-4D2A-91F4-2A35E08469A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386AB380-DF6F-4D2A-91F4-2A35E08469A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386AB380-DF6F-4D2A-91F4-2A35E08469A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386AB380-DF6F-4D2A-91F4-2A35E08469A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62080C4-CD95-4EC1-A10E-E759A4617C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62080C4-CD95-4EC1-A10E-E759A4617C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62080C4-CD95-4EC1-A10E-E759A4617C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62080C4-CD95-4EC1-A10E-E759A4617C93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

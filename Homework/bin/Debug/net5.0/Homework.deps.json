@@ -24,20 +24,11 @@
         }
       },
       "HW2BranchingStructure/1.0.0": {
-        "dependencies": {
-          "HW1Variables": "1.0.0"
-        },
         "runtime": {
           "HW2BranchingStructure.dll": {}
         }
       },
       "HW3Cycles/1.0.0": {
-        "dependencies": {
-          "HW1Variables": "1.0.0",
-          "HW2BranchingStructure": "1.0.0",
-          "HW4Arrays": "1.0.0",
-          "HW5DoubleArrays": "1.0.0"
-        },
         "runtime": {
           "HW3Cycles.dll": {}
         }

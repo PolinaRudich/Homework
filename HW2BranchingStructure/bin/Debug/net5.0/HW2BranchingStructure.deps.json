@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "HW2BranchingStructure/1.0.0": {
-        "dependencies": {
-          "HW1Variables": "1.0.0"
-        },
         "runtime": {
           "HW2BranchingStructure.dll": {}
-        }
-      },
-      "HW1Variables/1.0.0": {
-        "runtime": {
-          "HW1Variables.dll": {}
         }
       }
     }
   },
   "libraries": {
     "HW2BranchingStructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HW1Variables/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

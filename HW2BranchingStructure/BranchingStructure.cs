@@ -151,23 +151,32 @@ namespace HW2BranchingStructure
         }
         public  string CountDiscriminant(double a, double b, double c)
         {
+           
             string result = "";
             double discriminant = Math.Pow(b, 2) - 4 * (a) * (c);
             double x1 = ((-1 * (b)) - Math.Sqrt(discriminant)) / (2 * (a));
             double x2 = ((-1 * (b)) + Math.Sqrt(discriminant)) / (2 * (a));
+            if (double.IsInfinity(x1) ||  double.IsInfinity(x2))
+            {
+                throw new DivideByZeroException("a не может быть  нулем");
+            }
+            if(double.IsNaN(x2) || double.IsNaN(x1) )
+            {
+                
+                throw new ArgumentException("Дискриминант отрицательный");
+            }
             if (discriminant > 0)
             {
                 result = $"Ответ x1={x1} x2={x2}";
             }
-            else if (discriminant < 0)
-            {
-                result = "Решений нет";
-            }
+            
             else if (discriminant == 0)
             {
                 result = $"Ответ x1={x1} x2={x2}";
             }
             return result;
+           
+            
         }
         public  void Task5()
         {

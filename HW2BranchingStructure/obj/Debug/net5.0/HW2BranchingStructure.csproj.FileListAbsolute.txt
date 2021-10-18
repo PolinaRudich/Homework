@@ -10,6 +10,3 @@ C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW2Br
 C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.dll
 C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\ref\HW2BranchingStructure.dll
 C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.pdb
-C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW1Variables.dll
-C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\bin\Debug\net5.0\HW1Variables.pdb
-C:\Users\Asus\source\repos\Homework\HW2BranchingStructure\obj\Debug\net5.0\HW2BranchingStructure.csproj.CopyComplete

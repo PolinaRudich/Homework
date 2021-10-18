@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "HW1Variables/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/HW1Variables.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HW1Variables.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "HW1Variables/1.0.0": {
-      "type": "project",
-      "path": "../HW1Variables/HW1Variables.csproj",
-      "msbuildProject": "../HW1Variables/HW1Variables.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "HW1Variables >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\Asus\\.nuget\\packages\\": {},
@@ -57,11 +38,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj": {
-              "projectPath": "C:\\Users\\Asus\\source\\repos\\Homework\\HW1Variables\\HW1Variables.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
