@@ -4,6 +4,7 @@ namespace HW5DoubleArrays
 {
     public class DoubleArrays
     {
+        
         public  void Task1()
         {
             Console.WriteLine("DoubleArrays 1");
@@ -146,7 +147,7 @@ namespace HW5DoubleArrays
         {
             Console.WriteLine("DoubleArrays 5");
             int[,] array = CreateDoubleArray();
-            int maxNumber5 = FindTheNumberOfMaxElementThenSosedi(array);
+            string maxNumber5 = FindTheNumberOfMaxElementThenSosedi(array);
             Console.WriteLine(maxNumber5);
             string result = FindAllOfTheMaxElements(array);
             Console.WriteLine(result);
@@ -171,19 +172,20 @@ namespace HW5DoubleArrays
                     {
                         int maxelements = array[i, j];
                         
-                         result = $"{maxelements}, {i}, {j}";
-                        
+                         result += $"{maxelements} {i} {j}\n ";
+                       
                     }
                 }
             }
             
             return result;
         }
-        public  int FindTheNumberOfMaxElementThenSosedi(int [,]array)
+        public  string FindTheNumberOfMaxElementThenSosedi(int [,]array)
         {
             int line = array.GetLength(0);
             int column = array.GetLength(1);
             int maxNumber5 = 0;
+            string result = "";
             for (int i = 0; i < array.GetLength(0); i++)
             {
 
@@ -196,20 +198,20 @@ namespace HW5DoubleArrays
                     )
                     {
                         maxNumber5 = maxNumber5 + 1;
-
+                       
                     }
-
+                    
                 }
-
+                result = $"{maxNumber5}";
             }
-            return maxNumber5;
+            return result;
         }
         public  void Task6()
         {
             Console.WriteLine("DoubleArrays 6");
             int[,] array = CreateDoubleArray();
             ReverseDoubleArray(array);
-            
+           
            
         }
         public  double GetNumberFromUser(string message)
@@ -218,7 +220,7 @@ namespace HW5DoubleArrays
             double number = Convert.ToDouble(Console.ReadLine());
             return number;
         }
-        public string  ReverseDoubleArray (int[,] array)
+        public void  ReverseDoubleArray ( int[,] array)
         {
             string result = " ";
             int tmp = 0;
@@ -236,16 +238,45 @@ namespace HW5DoubleArrays
                
             }
             Console.WriteLine();
+            
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
 
-                    Console.Write($"{array[i, j]} ");
+                    Console.Write(array[i, j] + " ");
+                    result += $"{array[i, j]}";
 
                 }
                 Console.WriteLine();
             }
+           
+        }
+        public int[,] GetMock(int number)
+        {
+            int[,] result = new int[0, 0];
+            switch (number)
+            {
+               case 1:
+                    result = new int[,]
+                    {
+                        {4,3,5},
+                        {1,5,2},
+                        {7,0,4}
+                    };
+                    break;
+                case 2:
+                    result = new int[,]
+                    {
+                        {4,1,7},
+                        {3,5,0},
+                        {5,2,4}
+                    };
+                    break;
+
+
+
+            };
             return result;
         }
     }

@@ -48,7 +48,7 @@ namespace HW3Cycles
                 for (int p = 0; a * p >= -1000; p++)
                 {
                     result += $"{(a * p) * (-1)} ";
-                    
+
                 }
             }
             else
@@ -86,6 +86,10 @@ namespace HW3Cycles
         }
         public  int FindNOD(int a)
         {
+            if(a==0)
+            {
+                throw new DivideByZeroException("На ноль делить нельзя");
+            }
             int nd = 1;
             for (int o = 1; o < a; o++)
             {

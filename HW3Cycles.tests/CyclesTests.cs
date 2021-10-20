@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 
 namespace HW3Cycles.tests
 {
@@ -101,6 +102,7 @@ namespace HW3Cycles.tests
             Assert.AreEqual(actual, expected);
         }
         [TestCase(1000, "0 1000 ")]
+        [TestCase(-1000, "0 1000 ")]
         public void DisplayTheNumberDivisibleByATest(int a, string expected)
         {
            //act
@@ -109,6 +111,20 @@ namespace HW3Cycles.tests
             Assert.AreEqual(expected,actual);
 
 
+        }
+        [TestCase(0, "На ноль делить нельзя")]
+        public void DisplayTheNumberDivisibleByANegativeTest(int a, string expected)
+        {
+
+            //act, assert 
+            Assert.Throws(typeof(DivideByZeroException), () => _hw3.DisplayTheNumberDivisibleByA(a));
+        }
+        [TestCase(0, "На ноль делить нельзя")]
+        public void FindNODNegativeTest(int a, string expected)
+        {
+
+            //act, assert 
+            Assert.Throws(typeof(DivideByZeroException), () => _hw3.FindNOD(a));
         }
         [TestCase(5, "2 4 ")]
         public void FindSumChetMoreThanSumNechetTest(int a, string expected)
@@ -121,5 +137,6 @@ namespace HW3Cycles.tests
             Assert.AreEqual(expected, actual);
         }
         
+       
     }
 }

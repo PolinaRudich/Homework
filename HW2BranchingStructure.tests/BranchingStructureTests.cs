@@ -62,5 +62,11 @@ namespace HW2BranchingStructure.tests
             Assert.AreEqual(expected, actual);
 
         }
+        [TestCase(1,-3,-4, "Ответ x1=-1 x2=4")]
+        public void CountDiscriminantTest(double a, double b, double c,string expected)
+        {
+            string actual = _hw2.CountDiscriminant(a, b, c);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

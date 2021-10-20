@@ -18,7 +18,8 @@ namespace Homework
             DoubleArrays hw5 = new DoubleArrays();
             
            
-            hw3.Task11
+            hw3.Task6
+
               ();
             
 
