@@ -42,7 +42,7 @@ namespace HW1Variables
             Console.WriteLine("Variables 2");
             string stringOne = GetStringFromUser("Введите первую строку");
             string stringTwo = GetStringFromUser("Введите вторую строку");
-            string result = ReverseStrings(stringOne, stringTwo);
+            string result = ActionsWithStrings(stringOne, stringTwo);
             Console.WriteLine($"Результат: {result}");
 
 
@@ -54,8 +54,8 @@ namespace HW1Variables
             Console.WriteLine("Variables 3");
             double a = GetNumberFromUser("Введите число a");
             double b = GetNumberFromUser("Введите число b");
-            double result = DivideNumberswithoutRemainder(a, b);
-            double result1 = DivideNumberswithRemainder(a, b);
+            double result = DivideNumbersWithoutRemainder(a, b);
+            double result1 = DivideNumbersWithRemainder(a, b);
             Console.WriteLine($"Результат третьей задачи: {result}, {result1}");
         }
         public  void Task4()
@@ -97,7 +97,7 @@ namespace HW1Variables
             double B = (y2 - (A * x2));
             return B;
         }
-        public  double DivideNumberswithoutRemainder(double a, double b)
+        public  double DivideNumbersWithoutRemainder(double a, double b)
         {
             double result = a / b;
             if(double.IsInfinity(result))
@@ -107,7 +107,7 @@ namespace HW1Variables
             return (int)result;
 
         }
-        public  double DivideNumberswithRemainder(double a, double b)
+        public  double DivideNumbersWithRemainder(double a, double b)
         {
             double result1 = a % b;
             return result1;
@@ -146,17 +146,14 @@ namespace HW1Variables
             
         }
 
-        public  void ActionsWithStrings(string stringOne, string stringTwo)
+        public  string ActionsWithStrings(string stringOne, string stringTwo)
         {
-            string tmp = stringTwo;
-            stringTwo = stringOne;
-            stringOne = tmp;
+            
+           
+              string result = stringTwo + stringOne;
+            return result;
 
         }
-        public  string ReverseStrings(string stringOne, string stringTwo)
-        {
-            string result = stringTwo + stringOne;
-            return result;
-        }
+       
     }
 }

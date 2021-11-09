@@ -10,10 +10,10 @@ namespace HW3Cycles
             Console.WriteLine("Cycles 1");
                int a = (int)GetNumberFromUser("Введите число a");
             int b = (int)GetNumberFromUser("Введите число b");
-            long resultOfOperation = Elevate(a, b);
+            long resultOfOperation = Power(a, b);
             Console.WriteLine(resultOfOperation);
         }
-        public long Elevate( int a, int b)
+        public long Power( int a, int b)
         {
 
             long resultOfOperation = 1;
@@ -81,10 +81,10 @@ namespace HW3Cycles
         public  void Task4()
         {
             int a = (int)GetNumberFromUser("Введите число a");
-            int nd = FindNOD(a);
+            int nd = FindNod(a);
             Console.WriteLine(nd);
         }
-        public  int FindNOD(int a)
+        public  int FindNod(int a)
         {
             if(a==0)
             {
@@ -111,72 +111,69 @@ namespace HW3Cycles
         public  int  FindSummeryOfNumbers(int a, int b)
         {
             int sum = 0;
-            if (a < b)
-            {
-                for (int m = a; m <= b; m++)
+            if (a > b)
+                Swap(ref a, ref b);
+            
+                for (int i = a; i <= b; i++)
                 {
-                    if (m % 7 == 0)
+                    if (i % 7 == 0)
                     {
-                        sum += m;
+                        sum += i;
                     }
                 }
-            }
-            else if (a > b)
-            {
-                for (int r = b; r <= a; r++)
-                {
-                    if (r % 7 == 0)
-                    {
-                        sum += r;
-                    }
-                }
-            }
-
             return sum;
+        }
+        public void Swap( ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+            return;
         }
         //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
         public void Task6()
         {
-            int N = (int)GetNumberFromUser("Введите число N");
-            int Fibonachi = FindNumberOfFibonacha(N);
-            Console.WriteLine(Fibonachi);
+            int n = (int)GetNumberFromUser("Введите число N");
+            int fibonachi = FindNumberOfFibonacha(n);
+            Console.WriteLine(fibonachi);
         }
-        public  int FindNumberOfFibonacha(int N)
+      
+        public int FindNumberOfFibonacha(int n)
         {
-            int Fibonachi = 1;
+            int fibonachi = 1;
             int previos1 = 0;
             int previos2 = 1;
-            if(N<0)
+            if(n<0)
             {
                 
-             for (int i = 0; i >N+1; i--)
+             for (int i = 0; i >n+1; i--)
                 {
-                    Fibonachi = previos1 - previos2;
+                    fibonachi = previos1 - previos2;
                     previos1 = previos2;
-                    previos2 = Fibonachi;
+                    previos2 = fibonachi;
                 }
                 
             }
-            else if(N==0)
+            else if(n==0)
             {
-                Fibonachi = 0;
+                fibonachi = 0;
             }
-            for (int h = 1; h < N; h++)
+            for (int h = 1; h < n; h++)
             {
-                Fibonachi = previos1 + previos2;
+                fibonachi = previos1 + previos2;
                 previos1 = previos2;
-                previos2 = Fibonachi;
+                previos2 = fibonachi;
             }
-            return Fibonachi;
+            return fibonachi;
         }
         public  void Task7()
         {
             int a = (int)GetNumberFromUser("Введите число a");
             int b = (int)GetNumberFromUser("Введите число b");
-            int nod = (int)FindNODEvklid(a, b);
+            int nod = (int)FindNodEvklid(a, b);
             Console.WriteLine(nod);
         }
-        public  int FindNODEvklid(int a, int b)
+        public  int FindNodEvklid(int a, int b)
         {
             int nod = 1;
             int tmpEvklid = 0;
@@ -324,10 +321,10 @@ namespace HW3Cycles
         {
             Console.WriteLine("Cycles 9");
             long a = (long)GetNumberFromUser("Введите  одно число ");
-            int count = FindSumOfNechetNumbers(a);
+            int count = FindSumOfOddNumbers(a);
             Console.WriteLine(count);
         }
-        public  int FindSumOfNechetNumbers ( long a)
+        public  int FindSumOfOddNumbers ( long a)
         {
            
             int count = 0;
@@ -392,10 +389,10 @@ namespace HW3Cycles
             Console.WriteLine("Cycles 11");
             int t = (int)GetNumberFromUser("Введите число ");
             Console.WriteLine();
-            string tmp2 = FindSumChetMoreThanSumNechet(t);
+            string tmp2 = FindSumEvenMoreThanSumOdd(t);
            
         }
-        public  string FindSumChetMoreThanSumNechet (int t)
+        public  string FindSumEvenMoreThanSumOdd (int t)
         {
             int sumChet = 0;
             int sumNechet = 0;
@@ -441,10 +438,10 @@ namespace HW3Cycles
             Console.WriteLine("Cycles 12");
             int a = (int)GetNumberFromUser("Введите число a");
             int b = (int)GetNumberFromUser("Введите число b");
-            string res = SayIfTheSameNumbers(a, b);
+            string res = SayIfTheSameGigitsFound(a, b);
             Console.WriteLine(res);
         }
-        public  string SayIfTheSameNumbers(int a, int b)
+        public  string SayIfTheSameGigitsFound(int a, int b)
         {
             int tmp11 = Math.Abs(a);
             int tmp22 = Math.Abs(b);
@@ -469,9 +466,10 @@ namespace HW3Cycles
                         }
 
                     }
+                    srav++;
                     tmp22 = b;
                 }
-                if (srav != 0)
+                if (srav != 0||tmp11==0)
                 {
                     res = "yes";
                 }

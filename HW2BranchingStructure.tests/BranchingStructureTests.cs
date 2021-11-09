@@ -12,25 +12,30 @@ namespace HW2BranchingStructure.tests
             _hw2 = new BranchingStructure();
         }
 
-        [TestCase(3,4,-1)]
-        public void CompareasTest( double a, double b, double expected)
+        [TestCase(5,4,9)]
+        public void OrderNumbersTest( double a, double b, double expected)
         {
             //arrange 
             //act 
-            double actual = _hw2.Compareas(a, b);
+            double actual = _hw2.OrderNumbers(a, b);
             //assert
             Assert.AreEqual(expected, actual);
         }
-        [TestCase(3, 4, "I")]
-        public void FindQuaterTest(double X, double Y, string expected)
+        [TestCase(3, 4, 1)]
+        public void FindQuaterTest(double X, double Y, int expected)
         {
             //arrange 
             //act 
-            string actual = _hw2.FindQuater(X, Y);
+            int actual = _hw2.FindQuater(X, Y);
             //assert
             Assert.AreEqual(expected, actual);
         }
         [TestCase(3, 4, 1, "1,3,4")]
+        [TestCase(3, 1, 7, "1,3,7")]
+        [TestCase(3, 7, 1, "1,3,7")]
+        [TestCase(1, 3, 7, "1,3,7")]
+        [TestCase(7, 1, 3, "1,3,7")]
+        [TestCase(7, 3, 1, "1,3,7")]
         public void CompareTest(double a, double b, double c, string expected)
         {
             //arrange 
@@ -39,6 +44,10 @@ namespace HW2BranchingStructure.tests
             //assert
             Assert.AreEqual(expected, actual);
         }
+        
+       
+       
+
         [TestCase(1, 3, 9)]
         public void CountDiscriminantNegativeTest(double a, double b, double c)
         {
@@ -54,6 +63,7 @@ namespace HW2BranchingStructure.tests
             Assert.Throws(typeof(DivideByZeroException), () => _hw2.CountDiscriminant(a, b, c));
         }
         [TestCase(45, "Результат: Сорок пять")]
+        [TestCase(110, "Результат: Число не принадлежит диапазону от 10 до 99")]
         public void ConvertToLettersTest(int a, string expected)
         {
             //act

@@ -23,27 +23,32 @@ namespace HW1Variables.tests
             //assert
             Assert.AreEqual(expected, actual);
         }
+        [TestCase(2,2)]
+        public void CountNumbersNegativeTest(double a, double b)
+        {
+            Assert.Throws(typeof(ArgumentException), () => _hw1.CountNumbers(a, b));
+        }
         [TestCase("qwe", "asd", "asdqwe")]
-        public void ReverseStringsTest(string stringOne, string stringTwo, string expected)
+        public void ActionsWithStringsTest( ref string stringOne, ref string stringTwo,  ref string expected)
         {
             //act
-            string actual = _hw1.ReverseStrings(stringOne, stringTwo);
+            string actual = _hw1.ActionsWithStrings(stringOne, stringTwo);
             //assert
             Assert.AreEqual(expected, actual);
         }
         [TestCase(5, 6, 0)]
-        public void DivideNumberswithoutRemainderTest(double a, double b, int expected)
+        public void DivideNumbersWithoutRemainderTest(double a, double b, int expected)
         {
             //act 
-            double actual = _hw1.DivideNumberswithoutRemainder(a, b);
+            double actual = _hw1.DivideNumbersWithoutRemainder(a, b);
             //assert
             Assert.AreEqual(expected, actual);
         }
         [TestCase(1,1,0)]
-        public void DivideNumberswithRemainderTest( double a, double b, int expected)
+        public void DivideNumbersWithRemainderTest( double a, double b, int expected)
         {
             //act 
-            double actual = _hw1.DivideNumberswithRemainder(a,b);
+            double actual = _hw1.DivideNumbersWithRemainder(a,b);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -60,6 +65,12 @@ namespace HW1Variables.tests
         {
             //act, assert
             Assert.Throws(typeof(DivideByZeroException), () => _hw1.FindCoefficienEquation(x1, x2, y1, y2));
+        }
+        [TestCase(2,4,3,9,3)]
+        public void FindCoefficienEquationTest(double x1,double x2, double y1, double y2,double expected)
+        {
+            double actual = _hw1.FindCoefficienEquation(x1, x2, y1, y2);
+            Assert.AreEqual(expected, actual);
         }
         [TestCase(2, 0.5, 3, 0.5)]
         public void FindFreeMemberTest(double y2, double A, double x2, double expected)

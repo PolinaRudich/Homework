@@ -7,87 +7,91 @@ namespace HW2BranchingStructure
         public  void Task1()
         {
             Console.WriteLine("Branching Structure 1");
-            double a = GetaFromUser("Введите число a");
-            double b = GetaFromUser("Введите число b");
-            double result = Compareas(a, b);
+            double a = GetNumberFromUser("Введите число a");
+            double b = GetNumberFromUser("Введите число b");
+            double result = OrderNumbers(a, b);
             Console.WriteLine(result);
 
         }
-        public  double GetaFromUser(string message)
+        public  double GetNumberFromUser(string message)
         {
             Console.WriteLine(message);
             double a = Convert.ToDouble(Console.ReadLine());
             return a;
         }
-        public  double Addas(double a, double b)
+      
+        public  double OrderNumbers(double a, double b)
         {
-            double result = a + b;
-            return result;
-        }
-        public  double Multiplyas(double a, double b)
-        {
-            double result = a * b;
-            return result;
-        }
-        public  double Subtractas(double a, double b)
-        {
-            double result = a - b;
-            return result;
-        }
-        public  double Compareas(double a, double b)
-        {
+            double result = 0;
             if (a > b)
             {
-                double result = Addas(a, b);
-                return result;
+                 result = a + b;
+               
             }
             else if (a == b)
             {
-                double result = Multiplyas(a, b);
-                return result;
+                result = a*b;
+               
             }
             else
             {
-                double result = Subtractas(a, b);
-                return result;
+                 result = a/b;
+               
             }
+            return result;
         }
         public  void Task2()
         {
             Console.WriteLine("Branching Structure 2");
-            double X = GetaFromUser("Введите число a");
-            double Y = GetaFromUser("Введите число b");
-            string result = FindQuater(X, Y);
-            Console.WriteLine(result);
+            double X = GetNumberFromUser("Введите число a");
+            double Y = GetNumberFromUser("Введите число b");
+            int result = FindQuater(X, Y);
+            string result1 = ShowQuater(result);
+            Console.WriteLine(result1);
 
 
 
         }
-
-        public string FindQuater(double X, double Y)
+        public string ShowQuater(int result)
         {
-            string result = "";
+            
+           
+           
+             string result1 = result switch
+            {
+                1 => "I",
+                2 => "II",
+                3 => "III",
+                4 => "IV",
+                0=> "Не лежит на четверти",
+                _ => "",
+            };
+            return result1;
+        }
+        public int FindQuater(double X, double Y)
+        {
+            int result = 0;
             if (X > 0 && Y > 0)
             {
-                result = "I";
+                result = 1;
 
 
             }
             else if (X < 0 && Y > 0)
             {
-                result = "II";
+                result = 2;
             }
             else if (X < 0 && Y < 0)
             {
-                result = "III";
+                result = 3;
             }
             else
             {
-                result = "IV";
+                result = 4;
             }
             if (X == 0 || Y == 0)
             {
-                result = "Точка лежит на одной из координатных прямых";
+                result = 0;
             }
             return result;
         }
@@ -96,9 +100,9 @@ namespace HW2BranchingStructure
         public  void Task3()
         {
             Console.WriteLine("Branching Structure 3");
-            double a = GetaFromUser("Введите число a");
-            double b = GetaFromUser("Введите число b");
-            double c = GetaFromUser("Введите число c");
+            double a = GetNumberFromUser("Введите число a");
+            double b = GetNumberFromUser("Введите число b");
+            double c = GetNumberFromUser("Введите число c");
             string result = Compare(a, b, c);
             Console.WriteLine(result);
         }
@@ -143,15 +147,15 @@ namespace HW2BranchingStructure
         public  void Task4()
         {
             Console.WriteLine("Branching Structure 4");
-            double a = GetaFromUser("Введите число a");
-            double b = GetaFromUser("Введите число b");
-            double c = GetaFromUser("Введите число c");
+            double a = GetNumberFromUser("Введите число a");
+            double b = GetNumberFromUser("Введите число b");
+            double c = GetNumberFromUser("Введите число c");
             string result = CountDiscriminant(a, b, c);
             Console.WriteLine(result);
         }
         public  string CountDiscriminant(double a, double b, double c)
         {
-           
+
             string result = "";
             double discriminant = Math.Pow(b, 2) - 4 * (a) * (c);
             double x1 = ((-1 * (b)) - Math.Sqrt(discriminant)) / (2 * (a));
@@ -167,7 +171,7 @@ namespace HW2BranchingStructure
             }
             if (discriminant > 0)
             {
-                result = $"Ответ x1={x1} x2={x2}";
+                 result=$"Ответ x1={x1} x2={x2}";
             }
             
             else if (discriminant == 0)
@@ -181,7 +185,7 @@ namespace HW2BranchingStructure
         public  void Task5()
         {
             Console.WriteLine("Branching Structure 5");
-            int a = (int)GetaFromUser("Введите двузначное число");
+            int a = (int)GetNumberFromUser("Введите двузначное число");
             string result = ConvertToLetters(a);
             Console.WriteLine(result);
         }
@@ -231,7 +235,7 @@ namespace HW2BranchingStructure
                 7 => "семь",
                 8 => "восемь",
                 9 => "девять",
-
+                _=> "",
             };
             if (a < 20 && a > 9)
             {

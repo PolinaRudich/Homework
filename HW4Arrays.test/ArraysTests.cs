@@ -55,11 +55,11 @@ namespace HW4Arrays.test
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[4] {1,2,3,4}, 6)]
-        public void CountSumOfElementsWithNechetIndexesTest(int[]a,int expected)
+        public void CountSumOfElementsWithOddIndexesTest(int[]a,int expected)
         {
             //arange
             //act
-            int actual = _hw4.CountSumOfElementsWithNechetIndexes(a);
+            int actual = _hw4.CountSumOfElementsWithOddIndexes(a);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -68,9 +68,9 @@ namespace HW4Arrays.test
         {
             //arrange
             //act 
-            int[] actual = _hw4.ReverseArray(a);
+             _hw4.ReverseArray(a);
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, a);
         }
         [TestCase(new int[4] {1,2,3,4}, new int[4] {3,4,1,2})]
         [TestCase(new int[5] { 1, 2, 3, 4, 5 }, new int[5] { 4, 5, 3, 1, 2 })]
@@ -78,27 +78,27 @@ namespace HW4Arrays.test
         {
             //arrange
             //act
-            int[] actual = _hw4.SwapHalvesOfTheArrays(a);
+           _hw4.SwapHalvesOfTheArrays(a);
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, a);
         }
         [TestCase(new int[4] {3,5,2,1}, new int[4] {1,2,3,5})]
         public void SortArrayTest(int[]a, int[]expected)
         {
             //arrange
             //act
-            int[] actual = _hw4.SortArray(a);
+            _hw4.SortArray(a);
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, a);
         }
         [TestCase(new int[4] {6,1,2,4}, new int[4] {6,4,2,1})]
         public void SortArraySecondWayTest(int[]a,int[]expected)
         {
             //arrange
             //act
-            int[] actual = _hw4.SortArraySecondWay(a);
+             _hw4.SortArraySecondWay(a);
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, a);
         }
         [TestCase(new int[5] { 1, 2, 3, 4, 5 }, 3)]
         public void CountTheNumberOfOddElementsInAnArrayTest(int []a, int expected)

@@ -47,13 +47,14 @@ namespace HW4Arrays
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = random.Next(1, 100);
-
+                Console.Write(arr[i]+ " ");
+                
             }
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.Write(arr[i] + " ");
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.Write(arr[i] + " ");
 
-            }
+            //}
             return arr;
         }
         public  int FindMin(int[] a)
@@ -67,7 +68,12 @@ namespace HW4Arrays
                     min = a[i];
                 }
             }
+            if (a.Length == 0)
+            {
+                throw  new ArgumentException("Массив пуст");
+            }
             return min;
+           
         }
 
 
@@ -93,6 +99,10 @@ namespace HW4Arrays
                 }
 
             }
+            if (a.Length == 0)
+            {
+                throw new ArgumentException("Массив пуст");
+            }
             return indexOfMinElement;
         }
         public  void Task4()
@@ -116,6 +126,10 @@ namespace HW4Arrays
                 }
 
             }
+            if (a.Length == 0)
+            {
+                throw new ArgumentException("Массив пуст");
+            }
             return indexOfMaxElement;
         }
         public  void Task5()
@@ -123,11 +137,11 @@ namespace HW4Arrays
             Console.WriteLine("Arrays 5");
             int[] a = CreateArray();
             Console.WriteLine();
-            int sumNechet = CountSumOfElementsWithNechetIndexes(a);
+            int sumNechet = CountSumOfElementsWithOddIndexes(a);
             Console.WriteLine(sumNechet);
 
         }
-        public  int CountSumOfElementsWithNechetIndexes(int [] a)
+        public  int CountSumOfElementsWithOddIndexes(int [] a)
         {
 
             int sumElementsOfNecetIndex = 0;
@@ -139,6 +153,10 @@ namespace HW4Arrays
                     sumElementsOfNecetIndex += a[i];
                 }
             }
+            if (a.Length == 0)
+            {
+                throw new ArgumentException("Массив пуст");
+            }
             return sumElementsOfNecetIndex;
         }
         public  void Task6()
@@ -146,10 +164,10 @@ namespace HW4Arrays
             Console.WriteLine("Arrays 6");
             int[] a = CreateArray();
             Console.WriteLine();
-             a= ReverseArray(a);
+              ReverseArray(a);
             Console.WriteLine();
         }
-        public  int [] ReverseArray (int []a )
+        public  void ReverseArray (int []a )
         {
            
             for (int i = 0; i < a.Length / 2; i++)
@@ -165,8 +183,9 @@ namespace HW4Arrays
                 Console.Write(a[i] + " ");
                
             }
-            
-            return a;
+           
+
+          
         }
         public  void Task7()
         {
@@ -200,10 +219,10 @@ namespace HW4Arrays
             Console.WriteLine("Arrays 8");
             int[] a = CreateArray();
             Console.WriteLine();
-            int[] array = SwapHalvesOfTheArrays(a);
+             SwapHalvesOfTheArrays(a);
             
         }
-        public  int[] SwapHalvesOfTheArrays(int []a)
+        public  void SwapHalvesOfTheArrays(int []a)
         {
             int[] array = a;
             int tmp = 0;
@@ -225,16 +244,16 @@ namespace HW4Arrays
                 Console.Write(a[i] + " ");
             }
             Console.WriteLine();
-            return array;
+            
         }
         public  void Task9()
         {
             Console.WriteLine("Arrays 9");
             int[] a = CreateArray();
             Console.WriteLine();
-            int []array = SortArray(a);
+            SortArray(a);
         }
-        public  int[] SortArray (int []a)
+        public  void SortArray (int []a)
         {
             int[] array = a;
             int l = a.Length;
@@ -264,17 +283,17 @@ namespace HW4Arrays
                 Console.WriteLine();
                 
             }
-            return array;
+        
         }
         public  void Task10()
         {
             Console.WriteLine("Arrays 10");
             int[] a = CreateArray();
             Console.WriteLine();
-            int[] array = SortArraySecondWay(a);
+             SortArraySecondWay(a);
             Console.WriteLine();
         }
-        public  int []  SortArraySecondWay(int[]a)
+        public  void  SortArraySecondWay(int[]a)
         {
             int[] array = a;
             for (int i1 = 1; i1 < a.Length; i1++)
@@ -292,7 +311,7 @@ namespace HW4Arrays
             {
                 Console.Write(a[i1] + " ");
             }
-            return array;
+           
         }
         public  double GetNumberFromUser(string message)
         {
